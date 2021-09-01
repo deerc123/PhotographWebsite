@@ -1,0 +1,68 @@
+html{color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
+legend{color:#000}
+
+
+html{
+    background-image: url("../picture/bj.png");
+
+}
+#box1{
+   position: relative;
+    width: 377px;
+    height: 283px;
+    background-image: url("../MPpicture/组件 3 – 1.png");
+    margin: 100px auto;
+
+}
+#box1 h3{
+    display: inline-block;
+    width: 377px;
+    font:normal bold 40px "微软雅黑";
+    letter-spacing: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+}
+.logo{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+.down{
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: 300px;
+    animation: flicker 1s linear 0s infinite alternate;
+
+}
+@keyframes flicker {
+    0%{opacity: 1;}
+    50%{opacity: 0.5;}
+    100%{opacity: 0;}
+}
+#box2{
+    position: absolute;
+    height: 100px;
+    width: 1485px;
+    top:630px;
+    left: 50%;
+    margin-left: -742.5px;
+}
+#box2 img{
+   padding: 1px;
+
+}
+

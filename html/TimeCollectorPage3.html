@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TimeCollectorPage3</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/bgCss.css">
+    <link rel="stylesheet" href="../css/AboutUs.css">
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img alt="Brand" src="../TCPpicture/组%2071.png" width="30px" height="28px"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">时光收藏家<span class=" caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="TimeCollectorPage2.html">探店VLOG系列</a></li>
+                        <li><a href="TimeCollectorPage3.html">微记录系列</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">时光穿梭机<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./TimeShuttle.html">经典作品</a></li>
+                        <li><a href="./Photographer.html">摄影大师</a></li>
+                    </ul>
+                </li>
+                <li><a href="./HistoryMuseum.html">历史馆</a></li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">探索一下</button>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" data-toggle="modal" data-target="#myModal">关于我们</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container ">
+    <div class="row">
+        <div class=" col-sm-12 col-md-12 "><span class="smallLogo"><img src="../TCPpicture/矩形%202.png" ></span>
+            <span class="text">时光收藏--微记录系列</span>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 ">
+            <div class="thumbnail bg">
+                <div class="embed-responsive embed-responsive-4by3 frame">
+                    <video src="" poster="../TCPpicture/廖志强.png." ></video>
+                    <div class="mask ">
+                        <a href="javascript:;"><span class="glyphicon glyphicon-play-circle "></span></a>
+                    </div>
+                </div>
+
+                <div class="caption pad">
+                    <span><img src="../TCPpicture/矩形%20217.png" alt=""></span><span class="addText">情迷相机  |   廖志强</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail bg">
+                <div class="embed-responsive embed-responsive-4by3 frame">
+                    <video src="" poster="../TCPpicture/王珺.png" ></video>
+                    <div class="mask ">
+                        <a href="javascript:;"><span class="glyphicon glyphicon-play-circle "></span></a>
+                    </div>
+                </div>
+                <div class="caption pad">
+                    <span><img src="../TCPpicture/矩形%20217.png" alt=""></span><span class="addText">摄影收藏家  |   王珺</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<div class="videoBox" id="videoPlay">
+    <a href="#"><span class="glyphicon glyphicon-remove-circle"></span></a>
+    <div class="embed-responsive embed-responsive-4by3  center-block videoFrame">
+        <video src="" poster="" id="videoLink"></video>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel">关于我们</h2>
+            </div>
+            <div class="modal-body text-center aboutUsFont">
+                <p>卡卡相机博物馆 <br/>
+                    是有生活化气息的<br/>
+                    具有情怀的网站<br/>
+                    在这里<br/>
+                    倾听相机收藏家讲述他与相机的故事<br/>
+                    欣赏经典的摄影作品及其背后的故事<br/>
+                    了解相机的历史与技术发展状况</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="../js/jquery-1.12.4.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../js/bootstrap.min.js"></script>
+
+<script>
+    window.onload=function () {
+        let videoLink = document.getElementById('videoLink');
+        let vlogVideo = document.querySelectorAll('.frame');
+        let videoPlay = document.getElementById('videoPlay');
+        for(let i=0;i<2;i++) {
+            vlogVideo[i].onclick = function () {
+                videoPlay.style.display = "block";
+                videoLink.setAttribute('poster', this.getElementsByTagName('video')[0].poster);
+            }
+        };
+        let closeVideo=document.querySelector('#videoPlay>a>span');
+        closeVideo.onclick=function () {
+            videoPlay.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
